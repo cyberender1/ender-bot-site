@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ender Bot — Your Personal AI Team</title>
+  <meta name="description" content="Ender Bot is a native desktop AI assistant. Any model, always local. Connect OpenAI, Anthropic, or 200+ models via OpenRouter.">
+  <meta property="og:title" content="Ender Bot — Your Personal AI Team">
+  <meta property="og:description" content="Any model, always local. A native desktop AI assistant for Windows and Mac.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://enderbot.cyberender.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Critical above-fold CSS inlined for performance */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-feature-settings:'cv01','ss03';-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    :root{--bg:#0A0A0A;--surface:#141414;--text:#FFFFFF;--text-2:rgba(255,255,255,0.6);--text-3:rgba(255,255,255,0.35);--border:rgba(255,255,255,0.08);--border-s:rgba(255,255,255,0.05);--accent:#FFFFFF;--radius:16px}
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-wordmark">
+        <span class="nav-logo-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="white" fill-opacity="0.1"/>
+            <circle cx="14" cy="11" r="4" fill="white"/>
+            <path d="M7 21c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="9" cy="10" r="1.5" fill="white" fill-opacity="0.5"/>
+            <circle cx="19" cy="10" r="1.5" fill="white" fill-opacity="0.5"/>
+          </svg>
+        </span>
+        Ender Bot
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#platforms">Download</a>
+      </div>
+      <a href="https://github.com/cyberender1/ender-bot/releases/latest" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Download</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-pattern" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <!-- Floating bot avatars -->
+    <div class="floating-bots" aria-hidden="true">
+      <div class="bot blob bot-1">🤖</div>
+      <div class="bot circle bot-2">🧠</div>
+      <div class="bot squircle bot-3">⚡</div>
+      <div class="bot drop bot-4">🔒</div>
+      <div class="bot hex bot-5">🌙</div>
+      <div class="bot cloud bot-6">✨</div>
+      <div class="bot blob bot-7">🔄</div>
+      <div class="bot circle bot-8">💬</div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Native Desktop App · No Web Wrapper
+      </div>
+      <h1 class="hero-headline">
+        Meet<br>
+        <span class="gradient-text">Ender Bot</span>
+      </h1>
+      <p class="hero-sub">Your personal AI team.<br>Any model, always local.</p>
+      <div class="hero-ctas">
+        <a href="https://github.com/cyberender1/ender-bot/releases/latest" class="btn btn-primary" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5a4.5 4.5 0 0 0-1.424 8.77c.226.041.308-.098.308-.218l-.006-.855c-1.26.273-1.525-.607-1.525-.607-.206-.522-.503-.661-.503-.661-.411-.28.031-.275.031-.275.455.032.695.466.695.466.404.693 1.061.493 1.32.377.041-.293.158-.493.287-.606-1.005-.114-2.062-.503-2.062-2.237 0-.493.176-.896.465-1.213-.047-.114-.202-.574.044-1.196 0 0 .378-.121 1.24.463a4.315 4.315 0 0 1 1.128-.152c.383.002.768.052 1.128.152.861-.584 1.24-.463 1.24-.463.246.622.091 1.082.044 1.196.29.317.465.72.465 1.213 0 1.738-1.059 2.121-2.067 2.233.162.14.307.415.307.836l-.006 1.238c0 .122.082.263.311.218A4.502 4.502 0 0 0 8 1.5Z" fill="currentColor"/></svg>
+          Download for Windows
+        </a>
+        <a href="https://github.com/cyberender1/ender-bot/releases/latest" class="btn btn-ghost" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796 1.284 1.714 2.251 2.514 2.688 2.513.437-.001.303-.421 1.073-.525.77-.104 1.793.422 2.385.481.592.059.851-.312 1.566-.843.715-.531 1.948-1.762 2.279-4.038z" fill="currentColor"/></svg>
+          Download for Mac
+        </a>
+      </div>
+      <p class="hero-note">Free to use · Windows 10/11 · macOS 13+</p>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="section features" id="features" data-animate>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need,<br><span class="gradient-text">nothing you don't</span></h2>
+        <p class="section-sub">Built from the ground up as a native app. No electron bloat, no web wrappers — just fast, local AI.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">🤖</div>
+          <h3 class="feature-title">Any AI Model</h3>
+          <p class="feature-desc">Connect OpenAI, Anthropic, or 200+ models via OpenRouter. Switch models per conversation.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Fully Local</h3>
+          <p class="feature-desc">Your chats and memories never leave your device. No cloud sync, no telemetry, no surprises.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Always Fast</h3>
+          <p class="feature-desc">Native desktop app built for performance. Launches instantly, responds immediately.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">🧠</div>
+          <h3 class="feature-title">Bot Memory</h3>
+          <p class="feature-desc">Each bot remembers your conversations over time. Build context that compounds.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">🌙</div>
+          <h3 class="feature-title">Dark Mode</h3>
+          <p class="feature-desc">System-aware theming that looks great day or night. Your eyes will thank you.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">🔄</div>
+          <h3 class="feature-title">Auto Updates</h3>
+          <p class="feature-desc">Stays current automatically in the background. Always on the latest version.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section how-it-works" id="how-it-works" data-animate>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Up and running<br><span class="gradient-text">in minutes</span></h2>
+        <p class="section-sub">Three simple steps to your personal AI team.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card" data-animate>
+          <div class="step-num">01</div>
+          <div class="step-icon">⬇️</div>
+          <h3 class="step-title">Download &amp; Install</h3>
+          <p class="step-desc">One-click installer for Windows or Mac. No dependencies, no setup scripts. Just run and go.</p>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step-card" data-animate>
+          <div class="step-num">02</div>
+          <div class="step-icon">🔑</div>
+          <h3 class="step-title">Add an AI Provider</h3>
+          <p class="step-desc">Connect OpenAI, Anthropic, or OpenRouter with your API key. Your key stays on your device.</p>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step-card" data-animate>
+          <div class="step-num">03</div>
+          <div class="step-icon">🎭</div>
+          <h3 class="step-title">Create Your Bots</h3>
+          <p class="step-desc">Build a team of specialized agents — a researcher, a coder, a writer. Each with their own memory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLATFORM BADGES ===== -->
+  <section class="section platforms" id="platforms" data-animate>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for your<br><span class="gradient-text">desktop</span></h2>
+        <p class="section-sub">Available on the platforms you use every day.</p>
+      </div>
+      <div class="platform-cards">
+        <a href="https://github.com/cyberender1/ender-bot/releases/latest" class="platform-card" target="_blank" rel="noopener">
+          <div class="platform-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="48" height="48" rx="12" fill="rgba(255,255,255,0.06)"/>
+              <path d="M10 10H22V22H10V10Z" fill="#F35325"/>
+              <path d="M26 10H38V22H26V10Z" fill="#81BC06"/>
+              <path d="M10 26H22V38H10V26Z" fill="#05A6F0"/>
+              <path d="M26 26H38V38H26V26Z" fill="#FFBA08"/>
+            </svg>
+          </div>
+          <div class="platform-info">
+            <div class="platform-badge">Windows</div>
+            <div class="platform-name">Windows 10 / 11</div>
+            <div class="platform-arch">x64 · ARM64</div>
+          </div>
+          <div class="platform-dl">
+            <span>Download</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </a>
+        <a href="https://github.com/cyberender1/ender-bot/releases/latest" class="platform-card" target="_blank" rel="noopener">
+          <div class="platform-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="48" height="48" rx="12" fill="rgba(255,255,255,0.06)"/>
+              <path d="M24 10C16.268 10 10 16.268 10 24s6.268 14 14 14 14-6.268 14-14S31.732 10 24 10zm0 2c6.627 0 12 5.373 12 12s-5.373 12-12 12S12 30.627 12 24 17.373 12 24 12zm0 3c-4.418 0-8 3.582-8 8a8 8 0 0 0 5.333 7.542c.389.072.532-.169.532-.374 0-.185-.007-.675-.011-1.325-2.168.47-2.623-1.045-2.623-1.045-.354-.9-.864-1.139-.864-1.139-.707-.482.053-.473.053-.473.781.055 1.193.803 1.193.803.694 1.19 1.822.846 2.265.647.07-.503.272-.846.495-1.040-1.729-.197-3.545-.865-3.545-3.847 0-.85.304-1.545.801-2.090-.081-.196-.347-.988.075-2.060 0 0 .654-.209 2.140.797A7.46 7.46 0 0 1 24 19.5c.661.003 1.327.09 1.949.262 1.484-1.006 2.137-.797 2.137-.797.423 1.073.157 1.864.077 2.060.499.545.8 1.240.8 2.090 0 2.990-1.820 3.648-3.554 3.841.28.241.529.716.529 1.442 0 1.041-.01 1.88-.01 2.136 0 .207.14.45.535.373A8.001 8.001 0 0 0 32 24c0-4.418-3.582-8-8-8z" fill="white" fill-opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="platform-info">
+            <div class="platform-badge mac">macOS</div>
+            <div class="platform-name">macOS 13 Ventura+</div>
+            <div class="platform-arch">Intel · Apple Silicon</div>
+          </div>
+          <div class="platform-dl">
+            <span>Download</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </a>
+      </div>
+      <p class="platform-note">Released on GitHub — you'll need collaborator access to download from a private repo.</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-wordmark">
+          <span class="nav-logo-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="28" height="28" rx="8" fill="white" fill-opacity="0.1"/>
+              <circle cx="14" cy="11" r="4" fill="white"/>
+              <path d="M7 21c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="9" cy="10" r="1.5" fill="white" fill-opacity="0.5"/>
+              <circle cx="19" cy="10" r="1.5" fill="white" fill-opacity="0.5"/>
+            </svg>
+          </span>
+          Ender Bot
+        </a>
+        <p class="footer-copy">© 2026 Ender Bot · <a href="https://enderbot.cyberender.net">enderbot.cyberender.net</a></p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="https://github.com/cyberender1/ender-bot" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
